@@ -1,1 +1,1 @@
-# nodeEventos
+# Projeto Eventos - Curso MEAN
