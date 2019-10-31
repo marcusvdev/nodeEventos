@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Eventos e Convidados - Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <header>
+        <h1>Login</h1>
+        <h4>Entre com suas credenciais</h4>
+    </header>
+    <section>
+        <form action="/login" method="post" class="form">
+            <label for="user">Nome:</label>
+            <input type="text" id="user" name="usuario[nome]" />
+            <label for="pass">Senha:</label>
+            <input type="password" id="pass" name="usuario[senha]">
+            <input type="submit" value="Login">
+            <% if(locals.msg){ %>
+            <div class="form--response">
+                <p><%= msg %></p>
+            </div>
+            <% } %>
+        </form>
+    </section>
+    <footer>
+        <small>Sistema de Cadastro de Eventos e Convidados</small>
+    </footer>
+</body>
+
+</html>
